@@ -26,8 +26,34 @@ import Navbar from '~/components/Navbar.vue'
                         </div>
                     </div></swiper-slide
                 >
-                <swiper-slide>Slide 2</swiper-slide
-                ><swiper-slide>Slide 3</swiper-slide>
+                <swiper-slide
+                    ><div class="header-container-2">
+                        <div class="header-content-section">
+                            <div class="content-title">Istanbul Experience</div>
+                            <div class="support-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. A est laboriosam praesentium
+                                vero voluptates? Consectetur cupiditate ipsa
+                                tenetur voluptatum. Aliquam! Lorem ipsum dolor
+                                sit amet, consectetur adipisicing elit.
+                            </div>
+                        </div>
+                    </div></swiper-slide
+                >
+                <swiper-slide
+                    ><div class="header-container-3">
+                        <div class="header-content-section">
+                            <div class="content-title">Feel The Culture</div>
+                            <div class="support-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. A est laboriosam praesentium
+                                vero voluptates? Consectetur cupiditate ipsa
+                                tenetur voluptatum. Aliquam! Lorem ipsum dolor
+                                sit amet, consectetur adipisicing elit.
+                            </div>
+                        </div>
+                    </div></swiper-slide
+                >
             </swiper>
         </header>
     </div>
@@ -92,6 +118,25 @@ export default {
             overflow: hidden;
             filter: contrast(105%);
         }
+        .header-container-2 {
+            width: 100%;
+            height: 100%;
+            background-image: url('/gallery/header-bg-2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        .header-container-3 {
+            width: 100%;
+            height: 100%;
+            background-image: url('/gallery/header-bg-3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            filter: contrast(105%) saturate(80%) brightness(90%);
+        }
 
         .header-content-section {
             width: 100%;
@@ -101,17 +146,17 @@ export default {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            position: absolute;
+            padding-top: 10px;
             .content-title {
-                margin-bottom: 30px;
+                padding-bottom: 30px;
                 font-family: 'Bona+Nova', serif;
                 font-weight: 400;
                 font-size: 82px;
                 color: white;
                 text-shadow:
-                    0px 4px 3px rgba(0, 0, 0, 0.4),
-                    0px 8px 13px rgba(0, 0, 0, 0.1),
-                    0px 18px 23px rgba(0, 0, 0, 0.1);
+                    0 4px 3px rgba(0, 0, 0, 0.4),
+                    0 8px 13px rgba(0, 0, 0, 0.1),
+                    0 18px 23px rgba(0, 0, 0, 0.1);
             }
             .support-text {
                 font-size: 18px;
@@ -119,9 +164,84 @@ export default {
                 max-width: 700px;
                 color: white;
                 text-shadow:
-                    0px 4px 3px rgba(0, 0, 0, 0.4),
-                    0px 8px 13px rgba(0, 0, 0, 0.1),
-                    0px 18px 23px rgba(0, 0, 0, 0.1);
+                    0 4px 3px rgba(0, 0, 0, 0.4),
+                    0 8px 13px rgba(0, 0, 0, 0.1),
+                    0 18px 23px rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .main-menu-container {
+        width: 100%;
+        height: 100%;
+        header {
+            .header-content-section {
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 10px;
+                .content-title {
+                    font-family: 'Bona+Nova', serif;
+                    font-weight: 400;
+                    font-size: 80px;
+                    color: white;
+                    text-shadow:
+                        0 4px 3px rgba(0, 0, 0, 0.4),
+                        0 8px 13px rgba(0, 0, 0, 0.1),
+                        0 18px 23px rgba(0, 0, 0, 0.1);
+                }
+                .support-text {
+                    font-size: 16px;
+                    font-weight: 400;
+                    max-width: 500px;
+                    color: white;
+                    text-shadow:
+                        0 4px 3px rgba(0, 0, 0, 0.4),
+                        0 8px 13px rgba(0, 0, 0, 0.1),
+                        0 18px 23px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .main-menu-container {
+        width: 100%;
+        height: 100%;
+        header {
+            .header-content-section {
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 40px;
+                .content-title {
+                    font-family: 'Bona+Nova', serif;
+                    font-weight: 400;
+                    color: white;
+                    text-shadow:
+                        0 4px 3px rgba(0, 0, 0, 0.4),
+                        0 8px 13px rgba(0, 0, 0, 0.1),
+                        0 18px 23px rgba(0, 0, 0, 0.1);
+                }
+                .support-text {
+                    font-size: 16px;
+                    font-weight: 400;
+                    max-width: 500px;
+                    color: white;
+                    text-shadow:
+                        0 4px 3px rgba(0, 0, 0, 0.4),
+                        0 8px 13px rgba(0, 0, 0, 0.1),
+                        0 18px 23px rgba(0, 0, 0, 0.1);
+                }
             }
         }
     }
