@@ -1,5 +1,6 @@
 <script setup>
 import Navbar from '~/components/Navbar.vue'
+import RelaxArea from '~/components/RelaxArea.vue'
 </script>
 <template>
     <div class="main-menu-container">
@@ -56,6 +57,12 @@ import Navbar from '~/components/Navbar.vue'
                 >
             </swiper>
         </header>
+        <main>
+            <div class="main-support-area">
+                <RelaxArea />
+                <div class="cleaning-bg"></div>
+            </div>
+        </main>
     </div>
 </template>
 <script>
@@ -100,6 +107,9 @@ export default {
 .main-menu-container {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
     header {
         width: 100vw;
         height: 100vh;
@@ -170,6 +180,29 @@ export default {
             }
         }
     }
+    main {
+        width: 100%;
+        height: 100%;
+        .main-support-area {
+            width: 100%;
+            height: 100%;
+            .cleaning-bg {
+                width: 100%;
+                height: 500px;
+                background-image: url('/gallery/cleaning-bg.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                filter: contrast(105%) brightness(90%) saturate(90%);
+                overflow: hidden;
+                margin-bottom: 4rem;
+                box-shadow:
+                    rgba(17, 17, 26, 0.1) 0 8px 24px,
+                    rgba(17, 17, 26, 0.1) 0 16px 56px,
+                    rgba(17, 17, 26, 0.1) 0 24px 80px;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 768px) {
     .main-menu-container {
@@ -209,7 +242,7 @@ export default {
         }
     }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 648px) {
     .main-menu-container {
         width: 100%;
         height: 100%;

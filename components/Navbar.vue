@@ -21,9 +21,11 @@
 .navbar-container {
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 10px;
     position: absolute;
     z-index: 4;
     padding-top: 15px;
+    backdrop-filter: blur(3px);
     .navbar-content {
         margin: 0 auto;
         width: 100%;
@@ -78,6 +80,7 @@
         }
     }
 }
+
 @media only screen and (max-width: 1280px) {
     .navbar-container {
         .navbar-content {
@@ -329,4 +332,12 @@
     }
 }
 </style>
-<script setup lang="ts"></script>
+<script>
+import { MotionDirective as motion } from '@vueuse/motion'
+
+export default {
+    directives: {
+        motion: motion(),
+    },
+}
+</script>
