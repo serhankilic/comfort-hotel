@@ -1,6 +1,8 @@
 <script setup>
-import Navbar from '~/components/Navbar.vue'
-import RelaxArea from '~/components/RelaxArea.vue'
+import Navbar from '~/components/mainmenu/Navbar.vue'
+import RelaxArea from '~/components/mainmenu/RelaxArea.vue'
+import MainMenuCards from '~/components/mainmenu/MainMenuCards.vue'
+import RoomsPreview from '~/components/mainmenu/RoomsPreview.vue'
 </script>
 <template>
     <div class="main-menu-container">
@@ -61,6 +63,12 @@ import RelaxArea from '~/components/RelaxArea.vue'
             <div class="main-support-area">
                 <RelaxArea />
                 <div class="cleaning-bg"></div>
+            </div>
+            <div class="main-menu-cards-container">
+                <MainMenuCards />
+            </div>
+            <div class="main-menu-rooms-container">
+                <RoomsPreview />
             </div>
         </main>
     </div>
@@ -183,6 +191,8 @@ export default {
     main {
         width: 100%;
         height: 100%;
+        display: flex;
+        flex-direction: column;
         .main-support-area {
             width: 100%;
             height: 100%;
@@ -202,8 +212,65 @@ export default {
                     rgba(17, 17, 26, 0.1) 0 24px 80px;
             }
         }
+        .main-menu-cards-container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-menu-rooms-container {
+            width: 100%;
+        }
     }
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    position: relative;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: red;
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
+    position: relative;
+    z-index: 10;
+}
+
 @media only screen and (max-width: 768px) {
     .main-menu-container {
         width: 100%;

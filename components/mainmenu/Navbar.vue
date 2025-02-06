@@ -23,7 +23,7 @@
     margin: 0 auto;
     padding-bottom: 10px;
     position: absolute;
-    z-index: 4;
+    z-index: 10;
     padding-top: 15px;
     backdrop-filter: blur(3px);
     .navbar-content {
@@ -80,7 +80,15 @@
         }
     }
 }
-
+.navbar-container:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.15);
+}
 @media only screen and (max-width: 1280px) {
     .navbar-container {
         .navbar-content {

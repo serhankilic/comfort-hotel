@@ -1,0 +1,144 @@
+<template>
+    <swiper
+        :slidesPerView="'auto'"
+        :spaceBetween="30"
+        :pagination="{
+            clickable: true,
+        }"
+        :modules="modules"
+        class="mySwiper"
+    >
+        <swiper-slide>
+            <div class="card-content-area">
+                <a class="room-picture"></a>
+                <div class="room-descriptions">
+                    <div class="left-area">
+                        <a href="#" class="left-up"> Standart Room </a>
+                        <div class="left-down">
+                            <p class="room-size">27 m2</p>
+                            <p class="room-person">2 adults 1 children</p>
+                        </div>
+                    </div>
+                    <div class="right-area">
+                        <p class="right-up">from</p>
+                        <p class="right-down">$59</p>
+                    </div>
+                </div>
+            </div>
+        </swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide
+        ><swiper-slide>Slide 3</swiper-slide>
+        <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
+        <swiper-slide>Slide 6</swiper-slide>
+    </swiper>
+</template>
+<script>
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue'
+
+// Import Swiper styles
+import 'swiper/css'
+
+import 'swiper/css/pagination'
+
+import './global/style.css'
+
+// import required modules
+import { Pagination } from 'swiper/modules'
+
+export default {
+    components: {
+        Swiper,
+        SwiperSlide,
+    },
+    setup() {
+        return {
+            modules: [Pagination],
+        }
+    },
+}
+</script>
+<style>
+.swiper {
+    width: 100%;
+    height: 100%;
+    padding-left: 170px;
+}
+
+.swiper-slide {
+    width: 40%;
+    height: 65%;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .card-content-area {
+        width: 100%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .room-picture {
+            width: 100%;
+            height: 500px;
+            background-color: red;
+            position: relative;
+            cursor: pointer;
+        }
+        .room-descriptions {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+            .left-area {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                .left-up {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    text-decoration: none;
+                    color: black;
+                    font-size: 28px;
+                    font-family: 'Bona+Nova', serif;
+                    height: 30px;
+                }
+                .left-down {
+                    display: flex;
+                    flex-direction: row;
+                    height: 50px;
+                    align-items: center;
+                    font-size: 16px;
+                }
+            }
+            .right-area {
+                .right-up {
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+                    color: dimgray;
+                }
+                .right-down {
+                    display: flex;
+                    align-items: center;
+                    font-family: 'Bona+Nova', serif;
+                    height: 50px;
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+</style>
