@@ -6,8 +6,8 @@ import RoomsPreview from '~/components/mainmenu/RoomsPreview.vue'
 </script>
 <template>
     <div class="main-menu-container">
-        <header>
-            <nav>
+        <header class="main-menu-header">
+            <nav class="main-menu-nav">
                 <Navbar />
             </nav>
             <swiper
@@ -118,13 +118,22 @@ export default {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    header {
+    .main-menu-header {
         width: 100vw;
         height: 100vh;
         overflow: hidden;
-        nav {
+        .main-menu-nav {
             width: 100%;
             margin: 0 auto;
+        }
+        .swiper-slide {
+            height: 100vh;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
         .header-container-1 {
             width: 100%;
@@ -155,7 +164,6 @@ export default {
             overflow: hidden;
             filter: contrast(105%) saturate(80%) brightness(90%);
         }
-
         .header-content-section {
             width: 100%;
             height: 100%;
@@ -222,53 +230,9 @@ export default {
         }
         .main-menu-rooms-container {
             width: 100%;
+            padding-bottom: 10rem;
         }
     }
-}
-
-.swiper {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 2;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.swiper-pagination-bullet {
-    position: relative;
-    z-index: 10;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    font-size: 12px;
-    color: #000;
-    opacity: 1;
-    background: red;
-}
-
-.swiper-pagination-bullet-active {
-    color: #fff;
-    background: #007aff;
-    position: relative;
-    z-index: 10;
 }
 
 @media only screen and (max-width: 768px) {

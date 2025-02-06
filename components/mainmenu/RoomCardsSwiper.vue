@@ -1,36 +1,40 @@
 <template>
-    <swiper
-        :slidesPerView="'auto'"
-        :spaceBetween="30"
-        :pagination="{
-            clickable: true,
-        }"
-        :modules="modules"
-        class="mySwiper"
-    >
-        <swiper-slide>
-            <div class="card-content-area">
-                <a class="room-picture"></a>
-                <div class="room-descriptions">
-                    <div class="left-area">
-                        <a href="#" class="left-up"> Standart Room </a>
-                        <div class="left-down">
-                            <p class="room-size">27 m2</p>
-                            <p class="room-person">2 adults 1 children</p>
+    <div class="room-cards-container">
+        <div class="room-cards-slider">
+            <swiper
+                :slidesPerView="'auto'"
+                :spaceBetween="30"
+                :modules="modules"
+                class="mySwiper"
+            >
+                <swiper-slide>
+                    <div class="card-content-area">
+                        <a class="room-picture"></a>
+                        <div class="room-descriptions">
+                            <div class="left-area">
+                                <a href="#" class="left-up"> Standart Room </a>
+                                <div class="left-down">
+                                    <p class="room-size">27 m2</p>
+                                    <p class="room-person">
+                                        2 adults 1 children
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-area">
+                                <p class="right-up">from</p>
+                                <p class="right-down">$59</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="right-area">
-                        <p class="right-up">from</p>
-                        <p class="right-down">$59</p>
-                    </div>
-                </div>
-            </div>
-        </swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide
-        ><swiper-slide>Slide 3</swiper-slide>
-        <swiper-slide>Slide 4</swiper-slide><swiper-slide>Slide 5</swiper-slide>
-        <swiper-slide>Slide 6</swiper-slide>
-    </swiper>
+                </swiper-slide>
+                <swiper-slide>Slide 2</swiper-slide
+                ><swiper-slide>Slide 3</swiper-slide>
+                <swiper-slide>Slide 4</swiper-slide
+                ><swiper-slide>Slide 5</swiper-slide>
+                <swiper-slide>Slide 6</swiper-slide>
+            </swiper>
+        </div>
+    </div>
 </template>
 <script>
 // Import Swiper Vue.js components
@@ -53,92 +57,101 @@ export default {
     },
     setup() {
         return {
-            modules: [Pagination],
+            modules: [],
         }
     },
 }
 </script>
 <style>
-.swiper {
-    width: 100%;
-    height: 100%;
-    padding-left: 170px;
-}
-
-.swiper-slide {
-    width: 40%;
-    height: 65%;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .card-content-area {
-        width: 100%;
-        height: 95%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .room-picture {
+.room-cards-container {
+    padding-top: 50px;
+    .room-cards-slider {
+        .swiper {
             width: 100%;
-            height: 500px;
-            background-color: red;
-            position: relative;
-            cursor: pointer;
+            padding-left: 150px;
+            height: 620px;
         }
-        .room-descriptions {
-            width: 100%;
+
+        .swiper-slide {
+            width: 500px;
+            height: 100%;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
-            align-items: center;
-            padding-top: 30px;
-            .left-area {
+            .card-content-area {
+                width: 100%;
+                height: 95%;
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-start;
-                .left-up {
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    text-decoration: none;
-                    color: black;
-                    font-size: 28px;
-                    font-family: 'Bona+Nova', serif;
-                    height: 30px;
+                align-items: center;
+                .room-picture {
+                    width: 100%;
+                    height: 500px;
+                    background-color: red;
+                    position: relative;
+                    cursor: pointer;
                 }
-                .left-down {
+                .room-descriptions {
+                    width: 100%;
                     display: flex;
-                    flex-direction: row;
-                    height: 50px;
+                    justify-content: space-between;
                     align-items: center;
-                    font-size: 16px;
-                }
-            }
-            .right-area {
-                .right-up {
-                    height: 30px;
-                    display: flex;
-                    align-items: center;
-                    font-size: 16px;
-                    color: dimgray;
-                }
-                .right-down {
-                    display: flex;
-                    align-items: center;
-                    font-family: 'Bona+Nova', serif;
-                    height: 50px;
-                    font-size: 28px;
+                    padding: 30px 30px 0;
+                    .left-area {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        .left-up {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            text-decoration: none;
+                            color: black;
+                            font-size: 28px;
+                            font-family: 'Bona+Nova', serif;
+                            height: 30px;
+                            transition: 0.3s ease;
+                        }
+                        .left-up:hover {
+                            color: dimgray;
+                        }
+                        .left-down {
+                            display: flex;
+                            flex-direction: row;
+                            height: 50px;
+                            align-items: center;
+                            font-size: 16px;
+                        }
+                    }
+                    .right-area {
+                        .right-up {
+                            height: 30px;
+                            display: flex;
+                            align-items: center;
+                            font-size: 16px;
+                            color: dimgray;
+                        }
+                        .right-down {
+                            display: flex;
+                            align-items: center;
+                            font-family: 'Bona+Nova', serif;
+                            height: 50px;
+                            font-size: 28px;
+                        }
+                    }
                 }
             }
         }
-    }
-}
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
 </style>
