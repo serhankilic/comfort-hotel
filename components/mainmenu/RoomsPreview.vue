@@ -7,7 +7,7 @@ import RoomCardsSwiper from '~/components/mainmenu/RoomCardsSwiper.vue'
             <div class="area-subtext">
                 <p class="subtext">Extraordinary Suites</p>
                 <p class="main-subtext">
-                    Discover Tranquility in Our Airport Rooms
+                    Discover Tranquility in Our Wonder Rooms
                 </p>
             </div>
         </div>
@@ -26,7 +26,7 @@ import RoomCardsSwiper from '~/components/mainmenu/RoomCardsSwiper.vue'
             width: 100%;
             display: flex;
             flex-direction: column;
-            row-gap: 40px;
+            row-gap: 30px;
             justify-content: center;
             align-items: center;
             .subtext {
@@ -44,7 +44,80 @@ import RoomCardsSwiper from '~/components/mainmenu/RoomCardsSwiper.vue'
             }
         }
     }
-    .rooms-cards {
+}
+@media only screen and (max-width: 1280px) {
+    .rooms-preview-container {
+        .rooms-text-content {
+            .area-subtext {
+                .subtext {
+                    font-size: 14px;
+                }
+                .main-subtext {
+                    width: 70%;
+                    font-size: 76px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .rooms-preview-container {
+        .rooms-text-content {
+            .area-subtext {
+                .subtext {
+                    font-size: 14px;
+                }
+                .main-subtext {
+                    width: 70%;
+                    font-size: 72px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 855px) {
+    .rooms-preview-container {
+        .rooms-text-content {
+            .area-subtext {
+                .subtext {
+                    font-size: 14px;
+                }
+                .main-subtext {
+                    width: 80%;
+                    font-size: 68px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 780px) {
+    .rooms-preview-container {
+        .rooms-text-content {
+            .area-subtext {
+                .subtext {
+                    font-size: 14px;
+                }
+                .main-subtext {
+                    width: 90%;
+                    font-size: 68px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 590px) {
+    .rooms-preview-container {
+        .rooms-text-content {
+            .area-subtext {
+                .subtext {
+                    font-size: 14px;
+                }
+                .main-subtext {
+                    width: 90%;
+                    font-size: 54px;
+                }
+            }
+        }
     }
 }
 </style>

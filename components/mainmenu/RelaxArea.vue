@@ -187,7 +187,7 @@
                     display: flex;
                     padding-left: 6rem;
                     font-family: 'Bona+Nova', serif;
-                    font-size: 72px;
+                    font-size: 68px;
                 }
             }
             .relax-content-box {
@@ -213,6 +213,59 @@
     }
 }
 @media only screen and (max-width: 775px) {
+    .relax-area-container {
+        width: 100%;
+        height: 100%;
+        .relax-area-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .relax-area-title-box {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                padding-bottom: 40px;
+                .title-description {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 14px;
+                }
+                .title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: 'Bona+Nova', serif;
+                    font-size: 62px;
+                    text-align: center;
+                }
+            }
+            .relax-content-box {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                row-gap: 60px;
+                .line-box {
+                    width: 100px;
+                    height: 1px;
+                    background-color: rgb(210, 23, 23);
+                    display: none;
+                }
+                .relax-content-text {
+                    width: 350px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 590px) {
     .relax-area-container {
         width: 100%;
         height: 100%;

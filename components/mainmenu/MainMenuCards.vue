@@ -31,6 +31,9 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Nobis perspiciatis praesentium repellat saepe
                         sapiente! Adipisci consectetur nemo nostrum quia totam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Architecto blanditiis eveniet id nisi sapiente
+                        voluptates. Assumenda eos modi tempore unde?
                     </div>
                     <a href="#" class="description-box-button">VIEW ROOMS</a>
                 </div>
@@ -112,9 +115,8 @@
                     margin-bottom: 30px;
                 }
                 .description-box-text {
-                    font-size: 24px;
+                    font-size: 16px;
                     padding-bottom: 50px;
-                    line-height: 34px;
                     color: dimgray;
                 }
                 .description-box-button {

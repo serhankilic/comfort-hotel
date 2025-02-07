@@ -3,6 +3,7 @@ import Navbar from '~/components/mainmenu/Navbar.vue'
 import RelaxArea from '~/components/mainmenu/RelaxArea.vue'
 import MainMenuCards from '~/components/mainmenu/MainMenuCards.vue'
 import RoomsPreview from '~/components/mainmenu/RoomsPreview.vue'
+import OtherServices from '~/components/mainmenu/OtherServices.vue'
 </script>
 <template>
     <div class="main-menu-container">
@@ -59,7 +60,7 @@ import RoomsPreview from '~/components/mainmenu/RoomsPreview.vue'
                 >
             </swiper>
         </header>
-        <main>
+        <main class="main-container">
             <div class="main-support-area">
                 <RelaxArea />
                 <div class="cleaning-bg"></div>
@@ -69,6 +70,9 @@ import RoomsPreview from '~/components/mainmenu/RoomsPreview.vue'
             </div>
             <div class="main-menu-rooms-container">
                 <RoomsPreview />
+            </div>
+            <div class="other-services-container">
+                <OtherServices />
             </div>
         </main>
     </div>
@@ -196,7 +200,7 @@ export default {
             }
         }
     }
-    main {
+    .main-container {
         width: 100%;
         height: 100%;
         display: flex;
@@ -230,7 +234,6 @@ export default {
         }
         .main-menu-rooms-container {
             width: 100%;
-            padding-bottom: 10rem;
         }
     }
 }
