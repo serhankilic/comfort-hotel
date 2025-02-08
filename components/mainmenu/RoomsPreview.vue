@@ -4,7 +4,11 @@ import RoomCardsSwiper from '~/components/mainmenu/RoomCardsSwiper.vue'
 <template>
     <div class="rooms-preview-container">
         <div class="rooms-text-content">
-            <div class="area-subtext">
+            <div
+                class="area-subtext"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+            >
                 <p class="subtext">Extraordinary Suites</p>
                 <p class="main-subtext">
                     Discover Tranquility in Our Wonder Rooms

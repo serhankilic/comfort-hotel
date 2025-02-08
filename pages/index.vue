@@ -4,6 +4,7 @@ import RelaxArea from '~/components/mainmenu/RelaxArea.vue'
 import MainMenuCards from '~/components/mainmenu/MainMenuCards.vue'
 import RoomsPreview from '~/components/mainmenu/RoomsPreview.vue'
 import OtherServices from '~/components/mainmenu/OtherServices.vue'
+import CustomerExperience from '~/components/mainmenu/CustomerExperience.vue'
 </script>
 <template>
     <div class="main-menu-container">
@@ -73,6 +74,11 @@ import OtherServices from '~/components/mainmenu/OtherServices.vue'
             </div>
             <div class="other-services-container">
                 <OtherServices />
+            </div>
+            <div class="main-customer-experience-container">
+                <div class="customer-experience-area">
+                    <CustomerExperience />
+                </div>
             </div>
         </main>
     </div>
@@ -234,6 +240,38 @@ export default {
         }
         .main-menu-rooms-container {
             width: 100%;
+        }
+        .main-customer-experience-container {
+            width: 100%;
+            height: 80vh;
+            background-image: url('/gallery/customer-experience.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: 10rem;
+            position: relative;
+            z-index: 1;
+            .customer-experience-area {
+                z-index: 3;
+                position: absolute;
+                width: 800px;
+                height: 400px;
+                background-color: white;
+                bottom: -100px;
+            }
+        }
+        .main-customer-experience-container:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            z-index: -1;
         }
     }
 }

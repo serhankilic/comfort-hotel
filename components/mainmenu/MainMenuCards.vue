@@ -1,28 +1,34 @@
 <template>
     <div class="main-menu-cards-area">
         <div class="cards-title">
-            <span class="cards-title-text"
+            <span
+                class="cards-title-text"
+                data-aos="fade-up"
+                data-aos-duration="1500"
                 >THE BREATHTAKING BEAUTY OF OUR SUITES</span
             >
             <div class="title-line"></div>
         </div>
         <div class="double-card-content">
-            <div class="card-picture card-1">
-                <div class="card-description-box">
+            <div class="card-picture card-1" data-aos="fade-right">
+                <div class="card-description-box" data-aos="zoom-in-left">
                     <div class="description-box-title">
                         Exquisite Escape Awaits
                     </div>
-                    <div class="description-box-line"></div>
+                    <div class="description-box-line" data-aos="zoom-in"></div>
                     <div class="description-box-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Nobis perspiciatis praesentium repellat saepe
                         sapiente! Adipisci consectetur nemo nostrum quia totam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Corporis dolorem eaque iusto labore laborum neque,
+                        praesentium quibusdam repellat sapiente sunt.
                     </div>
                     <a href="#" class="description-box-button">VIEW ROOMS</a>
                 </div>
             </div>
-            <div class="card-picture card-2">
-                <div class="card-description-box">
+            <div class="card-picture card-2" data-aos="fade-left">
+                <div class="card-description-box" data-aos="zoom-in-right">
                     <div class="description-box-title">
                         Exquisite Escape Awaits
                     </div>
@@ -107,6 +113,7 @@
                     width: 100px;
                     font-size: 46px;
                     font-family: 'Bona+Nova', serif;
+                    line-height: 50px;
                 }
                 .description-box-line {
                     width: 100px;

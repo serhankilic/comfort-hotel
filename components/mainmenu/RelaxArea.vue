@@ -1,19 +1,27 @@
 <template>
     <div class="relax-area-container">
         <div class="relax-area-content">
-            <div class="relax-area-title-box">
-                <div class="title-description">RELAX IN COMFORT</div>
-                <div class="title">Extraordinary Location</div>
+            <div
+                class="relax-area-title-box"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+            >
+                <div class="title-description" data-aos="fade-up">
+                    RELAX IN COMFORT
+                </div>
+                <div class="title" data-aos="fade-up">
+                    Extraordinary Location
+                </div>
             </div>
             <div class="relax-content-box">
-                <div class="line-box"></div>
-                <div class="relax-content-text">
+                <div class="line-box" data-aos="zoom-in"></div>
+                <div class="relax-content-text" data-aos="fade-up">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     In, nulla, suscipit! Consectetur consequuntur corporis
                     dolorum eum nemo officia porro praesentium quibusdam quos,
                     voluptatem. Ab alias nobis quae, quis tempora voluptate.
                 </div>
-                <div class="relax-content-text">
+                <div class="relax-content-text" data-aos="fade-up">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Cupiditate excepturi fugiat hic incidunt ipsa iure labore
                     libero soluta vero voluptates. Lorem ipsum dolor sit amet.
