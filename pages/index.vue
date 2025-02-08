@@ -258,7 +258,7 @@ export default {
                 z-index: 3;
                 position: absolute;
                 width: 800px;
-                height: 400px;
+                height: 300px;
                 background-color: white;
                 bottom: -100px;
             }

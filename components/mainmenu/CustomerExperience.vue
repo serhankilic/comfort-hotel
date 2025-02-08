@@ -45,21 +45,26 @@ export default {
     width: 100%;
     height: 100%;
     background-color: red;
+    display: flex;
+    flex-direction: row;
+    .deneme {
+        width: 100px;
+        height: 100px;
+    }
 }
 .swiper {
     width: 100%;
     height: 100%;
-}
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .swiper-slide img {
@@ -69,11 +74,16 @@ export default {
     object-fit: cover;
 }
 .swiper-button-next {
-    background-color: red;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     color: black;
+    top: 85%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 0.3s all ease-in-out;
+}
+.swiper-button-next:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .swiper-button-next::after {
     content: url('/gallery/next.svg');
@@ -81,5 +91,28 @@ export default {
     justify-content: center;
     align-items: center;
     margin: auto;
+}
+.swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 85%;
+    left: 80%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 0.3s all ease-in-out;
+}
+.swiper-button-prev:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.swiper-button-prev:after {
+    content: url('/gallery/back.svg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
 }
 </style>
