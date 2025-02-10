@@ -1,10 +1,11 @@
 <script setup>
-import Navbar from '~/components/mainmenu/Navbar.vue'
+import Navbar from '~/components/Navbar.vue'
 import RelaxArea from '~/components/mainmenu/RelaxArea.vue'
 import MainMenuCards from '~/components/mainmenu/MainMenuCards.vue'
 import RoomsPreview from '~/components/mainmenu/RoomsPreview.vue'
 import OtherServices from '~/components/mainmenu/OtherServices.vue'
 import CustomerExperience from '~/components/mainmenu/CustomerExperience.vue'
+import Footer from '~/components/Footer.vue'
 </script>
 <template>
     <div class="main-menu-container">
@@ -81,6 +82,11 @@ import CustomerExperience from '~/components/mainmenu/CustomerExperience.vue'
                 </div>
             </div>
         </main>
+        <footer>
+            <div class="main-menu-footer-container">
+                <Footer />
+            </div>
+        </footer>
     </div>
 </template>
 <script>
@@ -251,13 +257,13 @@ export default {
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            margin-bottom: 10rem;
+            margin-bottom: 15rem;
             position: relative;
             z-index: 1;
             .customer-experience-area {
                 z-index: 3;
                 position: absolute;
-                width: 800px;
+                width: 950px;
                 height: 300px;
                 background-color: white;
                 bottom: -100px;

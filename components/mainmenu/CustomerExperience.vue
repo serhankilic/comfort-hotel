@@ -1,15 +1,45 @@
 <template>
     <div class="customer-experience-content">
+        <div class="customer-experience-bg"></div>
         <swiper :navigation="true" :modules="modules" class="mySwiper">
-            <swiper-slide>Slide 1</swiper-slide>
-            <swiper-slide>Slide 2</swiper-slide
-            ><swiper-slide>Slide 3</swiper-slide>
-            <swiper-slide>Slide 4</swiper-slide
-            ><swiper-slide>Slide 5</swiper-slide>
-            <swiper-slide>Slide 6</swiper-slide
-            ><swiper-slide>Slide 7</swiper-slide>
-            <swiper-slide>Slide 8</swiper-slide
-            ><swiper-slide>Slide 9</swiper-slide>
+            <swiper-slide
+                ><p class="textbox">
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Accusamus assumenda doloribus ducimus error, ex harum
+                    impedit laboriosam minus natus nesciunt quidem reiciendis
+                    repellat rerum saepe. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Consequuntur esse explicabo
+                    odio quos sit ullam?"
+                </p>
+                <div class="customer-info">
+                    <p class="customer-name">John D</p>
+                    <p class="customer-job">BUSINESS TRAVALER</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide
+                ><p class="textbox">
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Distinctio dolor dolorem ipsa reprehenderit vero. Amet
+                    explicabo itaque nulla repudiandae tenetur? Ex expedita
+                    fugit illo minus nulla quasi quidem quisquam, voluptatum?"
+                </p>
+                <div class="customer-info">
+                    <p class="customer-name">Han K</p>
+                    <p class="customer-job">SOFTWARE DEVELOPER</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide
+                ><p class="textbox">
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Assumenda deserunt excepturi illo impedit ipsam, magni nam
+                    perspiciatis sed. Animi architecto culpa inventore odio
+                    sapiente voluptas!"
+                </p>
+                <div class="customer-info">
+                    <p class="customer-name">EREN B</p>
+                    <p class="customer-job">SALE EXPERT</p>
+                </div>
+            </swiper-slide>
         </swiper>
     </div>
 </template>
@@ -47,72 +77,95 @@ export default {
     background-color: red;
     display: flex;
     flex-direction: row;
-    .deneme {
-        width: 100px;
-        height: 100px;
+    .customer-experience-bg {
+        width: 500px;
+        height: 300px;
+        background-image: url('/gallery/customer-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
-}
-.swiper {
-    width: 100%;
-    height: 100%;
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
+    .swiper {
+        width: 100%;
+        height: 100%;
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding: 30px 20px;
+            width: 100%;
 
-        /* Center slide text vertically */
+            .textbox {
+                text-align: start;
+                font-size: 17px;
+            }
+            .customer-info {
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                .customer-name {
+                    font-size: 24px;
+                    font-family: 'Bona+Nova', serif;
+                }
+                .customer-job {
+                    font-size: 14px;
+                    letter-spacing: 2px;
+                    color: dimgray;
+                }
+            }
+        }
+    }
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .swiper-button-next {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: black;
+        top: 85%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        transition: 0.3s all ease-in-out;
+    }
+    .swiper-button-next:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .swiper-button-next::after {
+        content: url('/gallery/next.svg');
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: auto;
     }
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.swiper-button-next {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: black;
-    top: 85%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: 0.3s all ease-in-out;
-}
-.swiper-button-next:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-.swiper-button-next::after {
-    content: url('/gallery/next.svg');
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-}
-.swiper-button-prev {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 85%;
-    left: 80%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: 0.3s all ease-in-out;
-}
-.swiper-button-prev:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-.swiper-button-prev:after {
-    content: url('/gallery/back.svg');
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 10px;
+    .swiper-button-prev {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 85%;
+        left: 80%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        transition: 0.3s all ease-in-out;
+    }
+    .swiper-button-prev:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .swiper-button-prev:after {
+        content: url('/gallery/back.svg');
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+    }
 }
 </style>
