@@ -77,7 +77,7 @@ import Footer from '~/components/Footer.vue'
                 <OtherServices />
             </div>
             <div class="main-customer-experience-container">
-                <div class="customer-experience-area">
+                <div class="customer-experience-area" data-aos="fade-up">
                     <CustomerExperience />
                 </div>
             </div>

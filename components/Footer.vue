@@ -3,7 +3,9 @@
         <div class="footer-content">
             <div class="footer-top">
                 <div class="hotel-footer-logo">
-                    <p class="logo">White Wonder Suites</p>
+                    <p class="logo" data-aos="zoom-in-up">
+                        White Wonder Suites
+                    </p>
                 </div>
             </div>
             <div class="footer-middle">
@@ -37,26 +39,60 @@
                 </div>
                 <div class="right-footer">
                     <div class="footer-links">
-                        <a class="footer-link home" href="#">Home</a>
-                        <a class="footer-link rooms" href="#">Rooms & Suites</a>
-                        <a class="footer-link about-us" href="#">About Us</a>
-                        <a class="footer-link restaurant" href="#"
+                        <a
+                            class="footer-link home"
+                            href="#"
+                            data-aos="fade-left"
+                            data-aos-delay="200"
+                            >Home</a
+                        >
+                        <a
+                            class="footer-link rooms"
+                            href="#"
+                            data-aos="fade-left"
+                            data-aos-delay="500"
+                            >Rooms & Suites</a
+                        >
+                        <a
+                            class="footer-link about-us"
+                            href="#"
+                            data-aos="fade-left"
+                            data-aos-delay="800"
+                            >About Us</a
+                        >
+                        <a
+                            class="footer-link restaurant"
+                            href="#"
+                            data-aos="fade-left"
+                            data-aos-delay="1100"
                             >Restaurant</a
                         >
-                        <a class="footer-link contact-us" href="#"
+                        <a
+                            class="footer-link contact-us"
+                            href="#"
+                            data-aos="fade-left"
+                            data-aos-delay="1400"
                             >Contact Us</a
                         >
-                        <a class="footer-link book" href="#">Book Now</a>
+                        <a
+                            class="footer-link book"
+                            href="#"
+                            data-aos="fade-left"
+                            data-aos-delay="1700"
+                            >Book Now</a
+                        >
                     </div>
                     <div class="contact-area">
                         <a
                             href="tel:+90-555-500-0261"
                             class="contact-link phone"
+                            data-aos="zoom-in-up"
                             >+90 555 500 0261</a
                         >
                         <a
                             href="mailto:contact@whitewonder.com"
                             class="contact-link email"
+                            data-aos="zoom-in-up"
                             >contact@whitewonder.com</a
                         >
                     </div>
@@ -150,11 +186,39 @@
                                 height: 40px;
                                 background-color: transparent;
                                 border-bottom: 1px solid dimgray;
-                                transition: 0.3s all ease;
+                                position: relative;
                             }
                             .text-box:focus-within {
                                 outline: none;
-                                border-bottom-color: #ae0505;
+                                animation: borderAnimation 1s ease-in-out
+                                    forwards;
+                            }
+                            @keyframes borderAnimation {
+                                0% {
+                                    border-bottom-color: dimgray;
+                                    border-image-source: linear-gradient(
+                                        to right,
+                                        #ae0505 -200%,
+                                        dimgray 100%
+                                    );
+                                    border-image-slice: 1;
+                                }
+                                50% {
+                                    border-image-source: linear-gradient(
+                                        to right,
+                                        #ae0505 5%,
+                                        dimgray 100%
+                                    );
+                                }
+                                100% {
+                                    border-bottom-color: dimgray;
+                                    border-image-source: linear-gradient(
+                                        to right,
+                                        #ae0505 100%,
+                                        #ae0505 100%
+                                    );
+                                    border-image-slice: 1;
+                                }
                             }
                         }
                     }
@@ -255,3 +319,4 @@
     }
 }
 </style>
+<script setup lang="ts"></script>
