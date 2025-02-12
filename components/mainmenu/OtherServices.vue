@@ -205,5 +205,295 @@
         }
     }
 }
+@media only screen and (max-width: 1280px) {
+    .other-services-container {
+        padding-top: 6rem;
+        display: flex;
+        margin: auto;
+        width: 100%;
+        max-width: 1500px;
+        padding-bottom: 4rem;
+        .other-services-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 100px;
+            .restaurant-area {
+                background-color: red;
+                .title-area {
+                    justify-content: center;
+                    align-items: center;
+                    row-gap: 5px;
+                    padding-bottom: 3rem;
+                    .small-title {
+                        font-size: 14px;
+                    }
+                    .big-title {
+                        font-size: 76px;
+                        font-family: 'Bona+Nova', serif;
+                    }
+                }
+                .main-restaurant-area {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    padding-top: 1rem;
+                    .effective-card {
+                        padding: 15px 30px;
+                        z-index: 2;
+                        margin-right: 0;
+                        position: relative;
+                        width: 400px;
+                        height: 600px;
+                        background-color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        .title {
+                            font-size: 46px;
+                            font-family: 'Bona+Nova', serif;
+                            line-height: 45px;
+                        }
+                        .line {
+                            width: 100px;
+                            height: 1px;
+                            background-color: red;
+                        }
+                        .text {
+                            font-size: 16px;
+                        }
+                        .restaurant-button {
+                            width: fit-content;
+                            text-decoration: none;
+                            color: red;
+                            padding: 10px 15px;
+                            border: 1px solid red;
+                            font-size: 16px;
+                            transition: 0.3s ease-in;
+                        }
+                        .restaurant-button:hover {
+                            background-color: rgba(255, 0, 0, 0.05);
+                        }
+                    }
+                    .restaurant-picture {
+                        z-index: 1;
+                        position: relative;
+                        width: 850px;
+                        height: 650px;
+                        background-color: mediumaquamarine;
+                        margin-left: 0;
+                        background-image: url('/gallery/restaurant.jpg');
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        border-radius: 5px;
+                    }
+                }
+            }
+            .spa-area {
+                width: 100%;
+                justify-content: space-between;
+                display: flex;
+                flex-direction: row;
+
+                .spa-text {
+                    width: 50%;
+                    margin-right: 5rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    padding-left: 50px;
+                    row-gap: 30px;
+                    .spa-titles {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 10px;
+                        .small-title {
+                            font-size: 14px;
+                        }
+                        .big-title {
+                            font-size: 76px;
+                            max-width: 250px;
+                            font-family: 'Bona+Nova', serif;
+                            line-height: 95px;
+                        }
+                    }
+                    .line {
+                        width: 100px;
+                        height: 1px;
+                        background-color: red;
+                    }
+                    .spa-content-text {
+                        max-width: 400px;
+                        font-size: 16px;
+                    }
+                }
+                .right-area {
+                    width: 50%;
+                    .spa-image {
+                        width: 850px;
+                        height: 650px;
+                        background-image: url('/gallery/spa-image.jpg');
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .other-services-container {
+        padding-top: 6rem;
+        display: flex;
+        margin: auto;
+        width: 100%;
+        max-width: 1500px;
+        padding-bottom: 4rem;
+        .other-services-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 100px;
+            .restaurant-area {
+                background-color: red;
+                .title-area {
+                    justify-content: center;
+                    align-items: center;
+                    row-gap: 5px;
+                    padding-bottom: 3rem;
+                    .small-title {
+                        font-size: 14px;
+                    }
+                    .big-title {
+                        font-size: 62px;
+                        font-family: 'Bona+Nova', serif;
+                    }
+                }
+                .main-restaurant-area {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    padding-top: 1rem;
+                    .effective-card {
+                        padding: 15px 30px;
+                        z-index: 2;
+                        margin-right: 0;
+                        position: relative;
+                        width: 400px;
+                        height: 600px;
+                        background-color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        .title {
+                            font-size: 46px;
+                            font-family: 'Bona+Nova', serif;
+                            line-height: 45px;
+                        }
+                        .line {
+                            width: 100px;
+                            height: 1px;
+                            background-color: red;
+                        }
+                        .text {
+                            font-size: 16px;
+                        }
+                        .restaurant-button {
+                            width: fit-content;
+                            text-decoration: none;
+                            color: red;
+                            padding: 10px 15px;
+                            border: 1px solid red;
+                            font-size: 16px;
+                            transition: 0.3s ease-in;
+                        }
+                        .restaurant-button:hover {
+                            background-color: rgba(255, 0, 0, 0.05);
+                        }
+                    }
+                    .restaurant-picture {
+                        z-index: 1;
+                        position: relative;
+                        width: 850px;
+                        height: 650px;
+                        background-color: mediumaquamarine;
+                        margin-left: 0;
+                        background-image: url('/gallery/restaurant.jpg');
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        border-radius: 5px;
+                    }
+                }
+            }
+            .spa-area {
+                width: 100%;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                row-gap: 50px;
+
+                .spa-text {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    margin: auto;
+                    padding-left: 50px;
+                    row-gap: 30px;
+                    .spa-titles {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        row-gap: 10px;
+                        .small-title {
+                            font-size: 14px;
+                        }
+                        .big-title {
+                            font-size: 62px;
+                            max-width: 250px;
+                            font-family: 'Bona+Nova', serif;
+                            line-height: 95px;
+                        }
+                    }
+                    .line {
+                        width: 100px;
+                        height: 1px;
+                        background-color: red;
+                    }
+                    .spa-content-text {
+                        max-width: 400px;
+                        font-size: 16px;
+                    }
+                }
+                .right-area {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .spa-image {
+                        width: 650px;
+                        height: 400px;
+                        background-image: url('/gallery/spa-image.jpg');
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
 </style>
 <script setup lang="ts"></script>

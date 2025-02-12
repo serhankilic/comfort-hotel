@@ -168,4 +168,167 @@ export default {
         padding-left: 10px;
     }
 }
+@media only screen and (max-width: 970px) {
+    .customer-experience-content {
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        display: flex;
+        flex-direction: row;
+        .customer-experience-bg {
+            width: 400px;
+            height: 300px;
+            background-image: url('/gallery/customer-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+            .swiper-slide {
+                font-size: 18px;
+                .textbox {
+                    text-align: start;
+                    font-size: 16px;
+                }
+                .customer-info {
+                    .customer-name {
+                        font-size: 24px;
+                        font-family: 'Bona+Nova', serif;
+                    }
+                    .customer-job {
+                        font-size: 14px;
+                        letter-spacing: 2px;
+                        color: dimgray;
+                    }
+                }
+            }
+        }
+        .swiper-button-next {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: black;
+            top: 85%;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            transition: 0.3s all ease-in-out;
+        }
+        .swiper-button-next:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .swiper-button-next::after {
+            content: url('/gallery/next.svg');
+            --swiper-navigation-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-button-prev {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 85%;
+            left: 80%;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            transition: 0.3s all ease-in-out;
+        }
+        .swiper-button-prev:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .swiper-button-prev:after {
+            content: url('/gallery/back.svg');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 10px;
+        }
+    }
+}
+@media only screen and (max-width: 840px) {
+    .customer-experience-content {
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        display: flex;
+        flex-direction: row;
+        .customer-experience-bg {
+            width: 300px;
+            height: 300px;
+            background-image: url('/gallery/customer-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+            .swiper-slide {
+                font-size: 16px;
+                .textbox {
+                    text-align: start;
+                    font-size: 14px;
+                }
+                .customer-info {
+                    .customer-name {
+                        font-size: 24px;
+                        font-family: 'Bona+Nova', serif;
+                    }
+                    .customer-job {
+                        font-size: 14px;
+                        letter-spacing: 2px;
+                        color: dimgray;
+                    }
+                }
+            }
+        }
+        .swiper-button-next {
+            display: flex;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: black;
+            top: 85%;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            transition: 0.3s all ease-in-out;
+        }
+        .swiper-button-next:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .swiper-button-next::after {
+            content: url('/gallery/next.svg');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-button-prev {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 85%;
+            left: 75%;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            transition: 0.3s all ease-in-out;
+        }
+        .swiper-button-prev:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .swiper-button-prev:after {
+            content: url('/gallery/back.svg');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 10px;
+        }
+    }
+}
 </style>

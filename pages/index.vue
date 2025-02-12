@@ -281,7 +281,82 @@ export default {
         }
     }
 }
-
+@media only screen and (max-width: 970px) {
+    .main-menu-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        .main-container {
+            .main-customer-experience-container {
+                width: 100%;
+                height: 80vh;
+                justify-content: center;
+                align-items: flex-end;
+                margin-bottom: 15rem;
+                position: relative;
+                z-index: 1;
+                .customer-experience-area {
+                    z-index: 3;
+                    position: absolute;
+                    width: 850px;
+                    height: 300px;
+                    background-color: white;
+                    bottom: -100px;
+                }
+            }
+            .main-customer-experience-container:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.2);
+                z-index: -1;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 840px) {
+    .main-menu-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        .main-container {
+            .main-customer-experience-container {
+                width: 100%;
+                height: 80vh;
+                justify-content: center;
+                align-items: flex-end;
+                margin-bottom: 15rem;
+                position: relative;
+                z-index: 1;
+                .customer-experience-area {
+                    z-index: 3;
+                    position: absolute;
+                    width: 650px;
+                    height: 300px;
+                    background-color: white;
+                    bottom: -100px;
+                }
+            }
+            .main-customer-experience-container:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.2);
+                z-index: -1;
+            }
+        }
+    }
+}
 @media only screen and (max-width: 768px) {
     .main-menu-container {
         width: 100%;
