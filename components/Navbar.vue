@@ -6,7 +6,7 @@
                 <a href="#" class="logo">White Wonder Suites</a>
                 <div class="navlinks">
                     <a href="#" class="navlink">Home</a>
-                    <a href="#" class="navlink">Rooms</a>
+                    <a href="/rooms" class="navlink">Rooms</a>
                     <a href="#" class="navlink">Gallery</a>
                     <a href="#" class="navlink">Events</a>
                     <a href="#" class="navlink">Contact</a>
@@ -73,8 +73,8 @@
             .book-button {
                 font-size: 18px;
                 padding: 10px 15px;
-                border: 1px solid rgb(210, 23, 23);
-                background-color: rgb(210, 23, 23);
+                border: 1px solid #ae0505;
+                background-color: #ae0505;
                 border-radius: 5px;
                 transition: 0.3s;
             }
