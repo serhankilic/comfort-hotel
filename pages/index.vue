@@ -8,7 +8,7 @@ import CustomerExperience from '~/components/mainmenu/CustomerExperience.vue'
 import Footer from '~/components/Footer.vue'
 </script>
 <template>
-    <div class="main-menu-container">
+    <div class="main-menu-container" id="main-menu">
         <header class="main-menu-header">
             <nav class="main-menu-nav">
                 <Navbar />
@@ -16,6 +16,7 @@ import Footer from '~/components/Footer.vue'
             <swiper
                 :pagination="pagination"
                 :modules="modules"
+                loop="true"
                 class="mySwiper"
             >
                 <swiper-slide

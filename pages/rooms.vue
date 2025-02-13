@@ -1,6 +1,7 @@
 <script setup>
 import Navbar from '~/components/Navbar.vue'
 import RoomsDescription from '~/components/rooms-page/RoomsDescription.vue'
+import RoomCards from '~/components/rooms-page/RoomCards.vue'
 </script>
 <template>
     <div class="rooms-page-container">
@@ -26,6 +27,9 @@ import RoomsDescription from '~/components/rooms-page/RoomsDescription.vue'
         <main>
             <div class="rooms-main-container" id="rooms-description-content">
                 <RoomsDescription />
+                <div class="room-cards-container">
+                    <RoomCards />
+                </div>
             </div>
         </main>
     </div>
@@ -109,6 +113,11 @@ import RoomsDescription from '~/components/rooms-page/RoomsDescription.vue'
         width: 100%;
         height: 100%;
         margin: 5rem 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5rem;
+        .rooms-cards-container {
+        }
     }
 }
 </style>
