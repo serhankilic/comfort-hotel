@@ -8,7 +8,7 @@ export default defineNuxtConfig({
             '@nuxtjs/google-fonts',
             {
                 families: {
-                    'Bona+Nova': [400, 500, 700],
+                    'Bona+Nova': [300, 400, 500, 700],
                     'Work+Sans': [300, 400, 500, 600, 700],
                     Inter: [400, 700],
                     'Josefin+Sans': true,

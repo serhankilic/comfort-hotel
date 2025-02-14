@@ -172,5 +172,335 @@
         }
     }
 }
+@media only screen and (max-width: 1536px) {
+    .rooms-description-content {
+        row-gap: 30px;
+        .text-area {
+            row-gap: 30px;
+            .small-room-text {
+                font-size: 16px;
+                font-weight: 500;
+            }
+            .big-room-text {
+                width: 60%;
+                font-size: 34px;
+                font-weight: 500;
+            }
+            .medium-room-text {
+                width: 50%;
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+        .icon-descriptions {
+            row-gap: 30px;
+            padding: 1rem 0;
+            .icon-description-title {
+                font-size: 16px;
+                font-weight: 500;
+            }
+            .icon-description-content {
+                display: flex;
+                flex-direction: row;
+                column-gap: 60px;
+                .description-box {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    .description-pic {
+                        width: 40px;
+                        height: 40px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                    .pic-description {
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        .check-time {
+            .check-content {
+                column-gap: 10px;
+                padding: 0 15px;
+                .clock-icon {
+                    font-size: 26px;
+                }
+                .check-time {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1020px) {
+    .rooms-description-content {
+        row-gap: 30px;
+        .text-area {
+            row-gap: 30px;
+            .small-room-text {
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .big-room-text {
+                width: 65%;
+                font-size: 32px;
+                font-weight: 500;
+            }
+            .medium-room-text {
+                width: 60%;
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+        .icon-descriptions {
+            row-gap: 35px;
+            padding: 1rem 0;
+            .icon-description-title {
+                font-size: 15px;
+                font-weight: 500;
+            }
+            .icon-description-content {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                row-gap: 45px;
+                column-gap: 100px;
+                .description-box {
+                    width: 100%;
+                    flex-direction: column;
+                    row-gap: 10px;
+                    .description-pic {
+                        width: 45px;
+                        height: 45px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                    .pic-description {
+                        font-size: 14px;
+                        font-weight: 500;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+        .check-time {
+            .check-content {
+                column-gap: 10px;
+                padding: 0 25px;
+                .clock-icon {
+                    font-size: 26px;
+                }
+                .check-time {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 870px) {
+    .rooms-description-content {
+        row-gap: 30px;
+        .text-area {
+            row-gap: 30px;
+            .small-room-text {
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .big-room-text {
+                width: 65%;
+                font-size: 32px;
+                font-weight: 500;
+            }
+            .medium-room-text {
+                width: 65%;
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+        .icon-descriptions {
+            row-gap: 35px;
+            padding: 1rem 0;
+            .icon-description-title {
+                font-size: 15px;
+                font-weight: 500;
+            }
+            .icon-description-content {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                row-gap: 45px;
+                column-gap: 100px;
+                .description-box {
+                    width: 100%;
+                    flex-direction: column;
+                    row-gap: 10px;
+                    .description-pic {
+                        width: 45px;
+                        height: 45px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                    .pic-description {
+                        font-size: 14px;
+                        font-weight: 500;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+        .check-time {
+            .check-content {
+                column-gap: 10px;
+                padding: 0 25px;
+                .clock-icon {
+                    font-size: 26px;
+                }
+                .check-time {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 770px) {
+    .rooms-description-content {
+        row-gap: 30px;
+        .text-area {
+            row-gap: 30px;
+            .small-room-text {
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .big-room-text {
+                width: 65%;
+                font-size: 32px;
+                font-weight: 500;
+            }
+            .medium-room-text {
+                width: 65%;
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+        .icon-descriptions {
+            row-gap: 35px;
+            padding: 1rem 0;
+            .icon-description-title {
+                font-size: 15px;
+                font-weight: 500;
+            }
+            .icon-description-content {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                row-gap: 45px;
+                column-gap: 80px;
+                .description-box {
+                    width: 100%;
+                    flex-direction: column;
+                    row-gap: 10px;
+                    .description-pic {
+                        width: 40px;
+                        height: 40px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                    .pic-description {
+                        font-size: 13px;
+                        font-weight: 500;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+        .check-time {
+            .check-content {
+                column-gap: 10px;
+                padding: 0 25px;
+                .clock-icon {
+                    font-size: 26px;
+                }
+                .check-time {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 645px) {
+    .rooms-description-content {
+        row-gap: 30px;
+        .text-area {
+            row-gap: 30px;
+            .small-room-text {
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .big-room-text {
+                width: 70%;
+                font-size: 28px;
+                font-weight: 500;
+            }
+            .medium-room-text {
+                width: 70%;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+        .icon-descriptions {
+            row-gap: 45px;
+            padding: 1rem 0;
+            .icon-description-title {
+                font-size: 15px;
+                font-weight: 500;
+            }
+            .icon-description-content {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                row-gap: 45px;
+                column-gap: 64px;
+                .description-box {
+                    width: 100%;
+                    flex-direction: column;
+                    row-gap: 10px;
+                    .description-pic {
+                        width: 40px;
+                        height: 40px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                    .pic-description {
+                        font-size: 13px;
+                        font-weight: 500;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+        .check-time {
+            .check-content {
+                column-gap: 10px;
+                padding: 0 25px;
+                .clock-icon {
+                    font-size: 26px;
+                }
+                .check-time {
+                    font-size: 15px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
 </style>
 <script></script>

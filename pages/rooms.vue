@@ -2,6 +2,9 @@
 import Navbar from '~/components/Navbar.vue'
 import RoomsDescription from '~/components/rooms-page/RoomsDescription.vue'
 import RoomCards from '~/components/rooms-page/RoomCards.vue'
+import PopularRoomFacilites from '~/components/rooms-page/PopularRoomFacilities.vue'
+import RoomsCustomerExperience from '~/components/rooms-page/RoomsCustomerExperience.vue'
+import Footer from '~/components/footer.vue'
 </script>
 <template>
     <div class="rooms-page-container">
@@ -30,8 +33,15 @@ import RoomCards from '~/components/rooms-page/RoomCards.vue'
                 <div class="room-cards-container">
                     <RoomCards />
                 </div>
+                <div class="popular-room-facilities-area">
+                    <PopularRoomFacilites />
+                    <RoomsCustomerExperience />
+                </div>
             </div>
         </main>
+        <footer>
+            <Footer />
+        </footer>
     </div>
 </template>
 <style>
@@ -112,11 +122,13 @@ import RoomCards from '~/components/rooms-page/RoomCards.vue'
     .rooms-main-container {
         width: 100%;
         height: 100%;
-        margin: 5rem 0;
+        margin: 5rem 0 0;
         display: flex;
         flex-direction: column;
         row-gap: 5rem;
-        .rooms-cards-container {
+        .popular-room-facilities-area {
+            display: flex;
+            flex-direction: column;
         }
     }
 }
