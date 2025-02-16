@@ -16,13 +16,27 @@ import Footer from '~/components/footer.vue'
                         class="center-header-text"
                         style="scroll-behavior: smooth"
                     >
-                        <p class="big-title">Rooms & Suites</p>
-                        <p class="small-title">Warmth. Care. Peace.</p>
-                        <a class="down-button" href="#rooms-description-content"
+                        <p
+                            class="big-title"
+                            data-aos="fade-up"
+                            data-aos-delay="600"
+                        >
+                            Rooms & Suites
+                        </p>
+                        <p
+                            class="small-title"
+                            data-aos="fade-up"
+                            data-aos-delay="1200"
+                        >
+                            Warmth. Care. Peace.
+                        </p>
+                        <NuxtLink
+                            class="down-button"
+                            to="#rooms-description-content"
                             ><Icon
                                 name="material-symbols:keyboard-double-arrow-down-rounded"
                                 class="down-button-icon"
-                        /></a>
+                        /></NuxtLink>
                     </div>
                 </div>
             </div>

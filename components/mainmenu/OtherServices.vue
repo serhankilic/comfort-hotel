@@ -7,7 +7,7 @@
                     data-aos="fade-up"
                     data-aos-duration="1500"
                 >
-                    <p class="small-title">BON APETIT</p>
+                    <p class="small-title">BON APPETIT</p>
                     <p class="big-title">Exquisite Cuisine</p>
                 </section>
                 <div class="main-restaurant-area">
@@ -119,7 +119,7 @@
                     .line {
                         width: 100px;
                         height: 1px;
-                        background-color: red;
+                        background-color: #ae0505;
                     }
                     .text {
                         font-size: 16px;
@@ -219,7 +219,6 @@
             flex-direction: column;
             row-gap: 100px;
             .restaurant-area {
-                background-color: red;
                 .title-area {
                     justify-content: center;
                     align-items: center;

@@ -74,7 +74,6 @@ export default {
 .customer-experience-content {
     width: 100%;
     height: 100%;
-    background-color: red;
     display: flex;
     flex-direction: row;
     .customer-experience-bg {

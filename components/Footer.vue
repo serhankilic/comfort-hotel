@@ -12,23 +12,45 @@
                 <div class="left-footer">
                     <div class="footer-form">
                         <div class="form-header">
-                            <p class="form-header-text">Have a question?</p>
+                            <p
+                                class="form-header-text"
+                                data-aos="zoom-in-up"
+                                data-aos-delay="300"
+                            >
+                                Have a question?
+                            </p>
                         </div>
                         <div class="footer-form-boxes">
-                            <div class="form-row">
+                            <div
+                                class="form-row"
+                                data-aos="fade-right"
+                                data-aos-delay="200"
+                            >
                                 <p class="row-description">Your name</p>
                                 <input type="text" value="" class="text-box" />
                             </div>
-                            <div class="form-row">
+                            <div
+                                class="form-row"
+                                data-aos="fade-right"
+                                data-aos-delay="200"
+                            >
                                 <p class="row-description">Your email</p>
                                 <input type="text" value="" class="text-box" />
                             </div>
-                            <div class="form-row">
+                            <div
+                                class="form-row"
+                                data-aos="fade-right"
+                                data-aos-delay="200"
+                            >
                                 <p class="row-description">Your message</p>
                                 <input type="text" value="" class="text-box" />
                             </div>
                         </div>
-                        <div class="footer-advertisements">
+                        <div
+                            class="footer-advertisements"
+                            data-aos="fade-up"
+                            data-aos-delay="200"
+                        >
                             <p class="advertisements-text">
                                 Yes, I would like to recieve emails with
                                 exclusive specials and offers.
@@ -41,44 +63,44 @@
                     <div class="footer-links">
                         <a
                             class="footer-link home"
-                            href="#"
                             data-aos="fade-left"
                             data-aos-delay="200"
+                            href="#"
                             >Home</a
                         >
                         <a
                             class="footer-link rooms"
-                            href="#"
                             data-aos="fade-left"
-                            data-aos-delay="500"
+                            data-aos-delay="200"
+                            href="#"
                             >Rooms & Suites</a
                         >
                         <a
                             class="footer-link about-us"
-                            href="#"
                             data-aos="fade-left"
-                            data-aos-delay="800"
+                            data-aos-delay="200"
+                            href="#"
                             >About Us</a
                         >
                         <a
                             class="footer-link restaurant"
-                            href="#"
                             data-aos="fade-left"
-                            data-aos-delay="1100"
+                            data-aos-delay="200"
+                            href="#"
                             >Restaurant</a
                         >
                         <a
                             class="footer-link contact-us"
-                            href="#"
                             data-aos="fade-left"
-                            data-aos-delay="1400"
+                            data-aos-delay="200"
+                            href="#"
                             >Contact Us</a
                         >
                         <a
                             class="footer-link book"
-                            href="#"
                             data-aos="fade-left"
-                            data-aos-delay="1700"
+                            data-aos-delay="200"
+                            href="#"
                             >Book Now</a
                         >
                     </div>

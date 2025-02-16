@@ -1,13 +1,27 @@
 <template>
     <div class="rooms-description-content">
         <div class="text-area">
-            <p class="small-room-text rooms-text">COMFORTABLE ROOMS & SPACE</p>
+            <p
+                class="small-room-text rooms-text"
+                data-aos="fade-up"
+                data-aos-delay="200"
+            >
+                COMFORTABLE ROOMS & SPACE
+            </p>
 
-            <p class="big-room-text rooms-text">
+            <p
+                class="big-room-text rooms-text"
+                data-aos="fade-up"
+                data-aos-delay="400"
+            >
                 Explore our refined accommodation options and find the perfect
                 space for your stay.
             </p>
-            <p class="medium-room-text rooms-text">
+            <p
+                class="medium-room-text rooms-text"
+                data-aos="fade-up"
+                data-aos-delay="500"
+            >
                 All rooms have a bathroom with shower, smart television/radio,
                 free WIFI and mini bar. In addition, all rooms are equipped with
                 a Nespresso coffee machine. Most rooms are carpeted, and also
@@ -15,35 +29,76 @@
             </p>
         </div>
         <div class="icon-descriptions">
-            <p class="icon-description-title">IN-ROOM AMENITIES</p>
+            <p
+                class="icon-description-title"
+                data-aos="fade-down"
+                data-aos-delay="700"
+            >
+                IN-ROOM AMENITIES
+            </p>
             <div class="icon-description-content">
-                <div class="description-box">
+                <div
+                    class="description-box"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    data-aos-duration="600"
+                >
                     <div class="description-pic wifi"></div>
                     <p class="pic-description">AIR CONDITIONING</p>
                 </div>
-                <div class="description-box">
+                <div
+                    class="description-box"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    data-aos-duration="700"
+                >
                     <div class="description-pic ac"></div>
                     <p class="pic-description">AIR CONDITIONING</p>
                 </div>
-                <div class="description-box">
+                <div
+                    class="description-box"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
+                    data-aos-duration="800"
+                >
                     <div class="description-pic bed"></div>
                     <p class="pic-description">PREMIUM BED</p>
                 </div>
-                <div class="description-box">
+                <div
+                    class="description-box"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                    data-aos-duration="900"
+                >
                     <div class="description-pic minibar"></div>
                     <p class="pic-description">MINI FRIDGE</p>
                 </div>
-                <div class="description-box">
+                <div
+                    class="description-box"
+                    data-aos="fade-up"
+                    data-aos-delay="600"
+                    data-aos-duration="1000"
+                >
                     <div class="description-pic smoke"></div>
                     <p class="pic-description">NO SMOKE</p>
                 </div>
-                <div class="description-box">
+                <div
+                    class="description-box"
+                    data-aos="fade-up"
+                    data-aos-delay="700"
+                    data-aos-duration="1100"
+                >
                     <div class="description-pic shower"></div>
                     <p class="pic-description">SHOWER CABIN</p>
                 </div>
             </div>
         </div>
-        <div class="check-time">
+        <div
+            class="check-time"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+            data-aos-duration="900"
+        >
             <div class="check-in check-content">
                 <Icon name="ic:baseline-access-time" class="clock-icon" />
                 <p class="check-in-time check-time">CHECK IN: 3:00 PM</p>

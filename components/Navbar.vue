@@ -3,13 +3,12 @@
     <div class="navbar-container">
         <div class="navbar-content">
             <div class="navbar-left-side">
-                <a href="#" class="logo">White Wonder Suites</a>
+                <NuxtLink href="/" class="logo">White Wonder Suites</NuxtLink>
                 <div class="navlinks">
-                    <a href="#" class="navlink">Home</a>
-                    <a href="/rooms" class="navlink">Rooms</a>
-                    <a href="#" class="navlink">Gallery</a>
-                    <a href="#" class="navlink">Events</a>
-                    <a href="#" class="navlink">Contact</a>
+                    <NuxtLink href="/" class="navlink">Home</NuxtLink>
+                    <NuxtLink href="/rooms" class="navlink">Rooms</NuxtLink>
+                    <NuxtLink href="/" class="navlink">Gallery</NuxtLink>
+                    <NuxtLink href="#" class="navlink">Contact</NuxtLink>
                 </div>
             </div>
             <div class="navbar-right-side">
