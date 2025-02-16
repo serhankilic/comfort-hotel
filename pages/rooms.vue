@@ -4,7 +4,7 @@ import RoomsDescription from '~/components/rooms-page/RoomsDescription.vue'
 import RoomCards from '~/components/rooms-page/RoomCards.vue'
 import PopularRoomFacilites from '~/components/rooms-page/PopularRoomFacilities.vue'
 import RoomsCustomerExperience from '~/components/rooms-page/RoomsCustomerExperience.vue'
-import Footer from '~/components/footer.vue'
+import Footer from '~/components/Footer.vue'
 </script>
 <template>
     <div class="rooms-page-container">

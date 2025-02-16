@@ -370,14 +370,14 @@ export default {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         .room-card {
-            width: 500px;
-            height: 650px;
+            width: 600px;
+            height: 850px;
             background-color: transparent;
             display: flex;
             flex-direction: column;
             .room-card-image {
                 width: 100%;
-                height: 350px;
+                height: 450px;
                 .swiper {
                     width: 100%;
                     height: 100%;
@@ -426,7 +426,7 @@ export default {
                 --swiper-navigation-color: #ae0505;
             }
             .room-card-texts {
-                height: calc(100% - 350px);
+                height: calc(100% - 450px);
                 width: 100%;
                 padding: 15px 0;
                 display: flex;
@@ -535,6 +535,91 @@ export default {
                 }
                 .room-card-texts {
                     height: calc(100% - 350px);
+                    padding: 15px 0;
+                    row-gap: 10px;
+                    .room-card-title {
+                        .room-name {
+                            font-size: 30px;
+                        }
+                        .price {
+                            font-size: 14px;
+                        }
+                    }
+                    .room-card-detail-icons {
+                        flex-direction: row;
+                        column-gap: 20px;
+                        padding: 8px 0;
+                        .icon-description {
+                            flex-direction: row;
+                            column-gap: 8px;
+                            .icon {
+                                width: 20px;
+                            }
+                            .icon-text {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .room-card-detail-description {
+                        padding-bottom: 10px;
+                        .detail-text {
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+                    .discover-more {
+                        width: fit-content;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: row;
+                        transition: 0.3s all ease-in-out;
+
+                        .text {
+                            font-size: 14px;
+                            border-bottom: 1px solid dimgray;
+                            transition: 0.3s all ease-in-out;
+                        }
+                        .icon {
+                            color: dimgray;
+                            font-size: 25px;
+                            transition: 0.3s all ease-in-out;
+                        }
+                        &:hover {
+                            .text {
+                                border: 1px solid transparent;
+                                padding-right: 5px;
+                            }
+                            .icon {
+                                color: #ae0505;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1125px) {
+    .room-cards-area {
+        .room-cards-content {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            row-gap: 50px;
+            align-items: center;
+            justify-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            .room-card {
+                width: 450px;
+                height: 600px;
+                flex-direction: column;
+                .room-card-image {
+                    width: 100%;
+                    height: 250px;
+                }
+                .room-card-texts {
+                    height: calc(100% - 250px);
                     padding: 15px 0;
                     row-gap: 10px;
                     .room-card-title {

@@ -7,7 +7,7 @@
                 <div class="navlinks">
                     <NuxtLink href="/" class="navlink">Home</NuxtLink>
                     <NuxtLink href="/rooms" class="navlink">Rooms</NuxtLink>
-                    <NuxtLink href="/" class="navlink">Gallery</NuxtLink>
+                    <NuxtLink href="/gallery" class="navlink">Gallery</NuxtLink>
                     <NuxtLink href="#" class="navlink">Contact</NuxtLink>
                 </div>
             </div>
