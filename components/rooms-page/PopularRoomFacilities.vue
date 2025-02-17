@@ -2,55 +2,119 @@
     <div class="room-facilities-container">
         <div class="room-facilities-content">
             <div class="left-side">
-                <p class="small-title">COMFORTABLE STAY EXPERIENCE</p>
-                <p class="big-title">MOST POPULAR FACILITIES</p>
-                <p class="description">
+                <p
+                    class="small-title"
+                    data-aos="fade-right"
+                    data-aos-duration="500"
+                >
+                    COMFORTABLE STAY EXPERIENCE
+                </p>
+                <p
+                    class="big-title"
+                    data-aos="fade-right"
+                    data-aos-duration="900"
+                >
+                    MOST POPULAR FACILITIES
+                </p>
+                <p
+                    class="description"
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                >
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Cum exercitationem itaque laborum perferendis porro
                     voluptatum! Alias aperiam aspernatur aut consequuntur
                     dignissimos dolorem eos error
                 </p>
-                <a href="#" class="more">More About Services</a>
+                <div
+                    class="facilities-button"
+                    data-aos="fade-up"
+                    data-aos-duration="1220"
+                >
+                    <NuxtLink href="#" class="more"
+                        >More About Services</NuxtLink
+                    >
+                </div>
             </div>
             <div class="right-side">
                 <div class="list-content">
-                    <div class="list-item">
+                    <div
+                        class="list-item"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                    >
                         <Icon name="material-symbols:add" class="more" />
                         <p class="list-text">High Quality Bed</p>
                     </div>
-                    <div class="list-item">
+                    <div
+                        class="list-item"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                    >
                         <Icon name="material-symbols:add" class="more" />
                         <p class="list-text">Smart TV</p>
                     </div>
-                    <div class="list-item">
+                    <div
+                        class="list-item"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                    >
                         <Icon name="material-symbols:add" class="more" />
                         <p class="list-text">Luxury Shower</p>
                     </div>
-                    <div class="list-item">
+                    <div
+                        class="list-item"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                    >
                         <Icon name="material-symbols:add" class="more" />
                         <p class="list-text">Mini Fridge</p>
                     </div>
-                    <div class="list-item">
+                    <div
+                        class="list-item"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                    >
                         <Icon name="material-symbols:add" class="more" />
                         <p class="list-text">Spa Flip Flops</p>
                     </div>
-                    <div class="list-item">
+                    <div
+                        class="list-item"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                    >
                         <Icon name="material-symbols:add" class="more" />
                         <p class="list-text">Coffee Table</p>
                     </div>
-                    <div class="list-item">
+                    <div
+                        class="list-item"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                    >
                         <Icon name="material-symbols:add" class="more" />
                         <p class="list-text">Bathrobes</p>
                     </div>
-                    <div class="list-item">
+                    <div
+                        class="list-item"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                    >
                         <Icon name="material-symbols:add" class="more" />
                         <p class="list-text">Dishes</p>
                     </div>
-                    <div class="list-item">
+                    <div
+                        class="list-item"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                    >
                         <Icon name="material-symbols:add" class="more" />
                         <p class="list-text">Laundry</p>
                     </div>
-                    <div class="list-item">
+                    <div
+                        class="list-item"
+                        data-aos="fade-left"
+                        data-aos-duration="800"
+                    >
                         <Icon name="material-symbols:add" class="more" />
                         <p class="list-text">24/7 Security</p>
                     </div>

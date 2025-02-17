@@ -5,10 +5,10 @@
             <div class="navbar-left-side">
                 <NuxtLink href="/" class="logo">White Wonder Suites</NuxtLink>
                 <div class="navlinks">
-                    <NuxtLink href="/" class="navlink">Home</NuxtLink>
-                    <NuxtLink href="/rooms" class="navlink">Rooms</NuxtLink>
-                    <NuxtLink href="/gallery" class="navlink">Gallery</NuxtLink>
-                    <NuxtLink href="#" class="navlink">Contact</NuxtLink>
+                    <NuxtLink to="/" class="navlink">Home</NuxtLink>
+                    <NuxtLink to="/rooms" class="navlink">Rooms</NuxtLink>
+                    <NuxtLink to="/gallery" class="navlink">Gallery</NuxtLink>
+                    <NuxtLink to="/contact" class="navlink">Contact</NuxtLink>
                 </div>
             </div>
             <div class="navbar-right-side">

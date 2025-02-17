@@ -22,8 +22,18 @@ import Footer from '~/components/Footer.vue'
                 <swiper-slide
                     ><div class="header-container-1">
                         <div class="header-content-section">
-                            <div class="content-title">Suite Collection</div>
-                            <div class="support-text">
+                            <div
+                                class="content-title"
+                                data-aos="fade-up"
+                                data-aos-delay="600"
+                            >
+                                Suite Collection
+                            </div>
+                            <div
+                                class="support-text"
+                                data-aos="fade-up"
+                                data-aos-delay="1200"
+                            >
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit. A est laboriosam praesentium
                                 vero voluptates? Consectetur cupiditate ipsa

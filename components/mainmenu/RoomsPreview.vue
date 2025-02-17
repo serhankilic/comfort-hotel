@@ -36,7 +36,8 @@ import RoomCardsSwiper from '~/components/mainmenu/RoomCardsSwiper.vue'
             .subtext {
                 font-size: 16px;
                 text-transform: uppercase;
-                font-weight: 700;
+                font-weight: 500;
+                color: #ae0505;
             }
             .main-subtext {
                 font-size: 86px;
@@ -45,6 +46,37 @@ import RoomCardsSwiper from '~/components/mainmenu/RoomCardsSwiper.vue'
                 text-align: center;
                 line-height: 95px;
                 padding-bottom: 2rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1500px) {
+    .rooms-preview-container {
+        .rooms-text-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .area-subtext {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+                justify-content: center;
+                align-items: center;
+                .subtext {
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    color: #ae0505;
+                }
+                .main-subtext {
+                    font-size: 86px;
+                    font-family: 'Bona+Nova', serif;
+                    width: 60%;
+                    text-align: center;
+                    line-height: 95px;
+                    padding-bottom: 2rem;
+                }
             }
         }
     }
@@ -119,6 +151,23 @@ import RoomCardsSwiper from '~/components/mainmenu/RoomCardsSwiper.vue'
                 .main-subtext {
                     width: 90%;
                     font-size: 54px;
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 440px) {
+    .rooms-preview-container {
+        .rooms-text-content {
+            .area-subtext {
+                .subtext {
+                    font-size: 14px;
+                }
+                .main-subtext {
+                    width: 90%;
+                    font-size: 46px;
+                    line-height: 50px;
                 }
             }
         }

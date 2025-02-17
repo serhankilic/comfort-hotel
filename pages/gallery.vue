@@ -6,8 +6,14 @@
 
             <div class="gallery-content-container">
                 <div class="gallery-title">
-                    <p class="title">Gallery</p>
-                    <p class="description">
+                    <p class="title" data-aos="fade-up" data-aos-delay="600">
+                        Gallery
+                    </p>
+                    <p
+                        class="description"
+                        data-aos="fade-up"
+                        data-aos-delay="1200"
+                    >
                         Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Assumenda consectetur consequatur mollitia
                         necessitatibus omnis voluptates? Lorem ipsum dolor sit

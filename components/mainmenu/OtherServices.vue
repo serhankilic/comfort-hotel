@@ -1,7 +1,7 @@
 <template>
     <div class="other-services-container">
         <div class="other-services-content">
-            <div class="restaurant-area">
+            <div class="restaurant-area" id="restaurant">
                 <section
                     class="title-area"
                     data-aos="fade-up"
@@ -142,7 +142,6 @@
                     position: relative;
                     width: 850px;
                     height: 650px;
-                    background-color: mediumaquamarine;
                     margin-left: 20rem;
                     background-image: url('/gallery/restaurant.jpg');
                     background-size: cover;
@@ -282,7 +281,7 @@
                         position: relative;
                         width: 850px;
                         height: 650px;
-                        background-color: mediumaquamarine;
+
                         margin-left: 0;
                         background-image: url('/gallery/restaurant.jpg');
                         background-size: cover;
@@ -360,7 +359,6 @@
             flex-direction: column;
             row-gap: 100px;
             .restaurant-area {
-                background-color: red;
                 .title-area {
                     justify-content: center;
                     align-items: center;
@@ -424,7 +422,7 @@
                         position: relative;
                         width: 850px;
                         height: 650px;
-                        background-color: mediumaquamarine;
+
                         margin-left: 0;
                         background-image: url('/gallery/restaurant.jpg');
                         background-size: cover;
