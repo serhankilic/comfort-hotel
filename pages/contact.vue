@@ -28,6 +28,7 @@
             <main>
                 <div class="contact-page-main-container">
                     <ContactForm />
+                    <ContactInformations />
                 </div>
             </main>
             <footer>
@@ -83,6 +84,92 @@
         .contact-main-container {
             width: 100%;
             height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+@media only screen and (max-width: 1536px) {
+    .contact-main-container {
+        .contact-page-content {
+            .contact-header-container {
+                .header-text-area {
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    color: whitesmoke;
+                    position: relative;
+                    z-index: 2;
+
+                    .contact-title {
+                        font-family: 'Bona+Nova', serif;
+                        font-size: 72px;
+                        line-height: 75px;
+                        letter-spacing: 3px;
+                    }
+
+                    .description-title {
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .contact-main-container {
+        .contact-page-content {
+            .contact-header-container {
+                .header-text-area {
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    color: whitesmoke;
+                    position: relative;
+                    z-index: 2;
+
+                    .contact-title {
+                        font-family: 'Bona+Nova', serif;
+                        font-size: 68px;
+                        line-height: 75px;
+                        letter-spacing: 3px;
+                    }
+
+                    .description-title {
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .contact-main-container {
+        .contact-page-content {
+            .contact-header-container {
+                .header-text-area {
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    color: whitesmoke;
+                    position: relative;
+                    z-index: 2;
+
+                    .contact-title {
+                        font-family: 'Bona+Nova', serif;
+                        font-size: 64px;
+                        line-height: 70px;
+                        letter-spacing: 3px;
+                    }
+
+                    .description-title {
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+            }
         }
     }
 }

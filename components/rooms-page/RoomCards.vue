@@ -1,3 +1,6 @@
+<script setup>
+import rooms from '~/pages/rooms.vue'
+</script>
 <template>
     <div class="room-cards-area">
         <div class="room-cards-content">
@@ -73,13 +76,13 @@
                             laborum nobis odit optio repudiandae sed. Rerum.
                         </p>
                     </div>
-                    <button class="discover-more">
-                        <span class="text">Discover More</span>
+                    <NuxtLink :to="`/rooms/${rooms.id}`" class="discover-more">
+                        <span class="text">HO More</span>
                         <Icon
                             name="material-symbols-light:chevron-right"
                             class="icon"
                         />
-                    </button>
+                    </NuxtLink>
                 </div>
             </div>
             <div class="room-card">
@@ -337,8 +340,6 @@ import 'swiper/css'
 
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
-
-import './global/style.css'
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules'

@@ -98,8 +98,6 @@ import 'swiper/css'
 
 import 'swiper/css/pagination'
 
-import './global/style.css'
-
 // import required modules
 import { Pagination } from 'swiper/modules'
 
